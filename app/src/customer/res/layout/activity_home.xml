@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.HomeActivity">
+
+        <!--Main content...-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/ToolbarStyle"
+                    android:background="@drawable/bg_gradient"
+                    app:navigationIcon="@drawable/ic_menu"
+                    app:title=" " />
+
+
+                <!--Header one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gradient"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingHorizontal="16dp"
+                    tools:ignore="UnusedAttribute">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="@dimen/image_thumb"
+                        android:layout_height="@dimen/image_thumb"
+                        tools:src="@drawable/ic_profile_placeholder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_greeting_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            tools:text="@string/good_morning" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_first_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jonathan"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Header two-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gradient_two"
+                    android:padding="16dp">
+
+
+                    <app.android.snappay.customview.CustomTextView
+                        android:id="@+id/tv_send_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_send_money"
+                        android:gravity="center"
+                        android:text="@string/send_money"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <app.android.snappay.customview.CustomTextView
+                        android:id="@+id/tv_request_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_request_money"
+                        android:gravity="center"
+                        android:text="@string/request_money"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <app.android.snappay.customview.CustomTextView
+                        android:id="@+id/tv_wallet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_wallet"
+                        android:gravity="center"
+                        android:text="@string/wallet"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <app.android.snappay.customview.CustomTextView
+                        android:id="@+id/tv_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_activity"
+                        android:gravity="center"
+                        android:text="@string/activity"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_gradient_three"
+                    android:padding="16dp"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/item_home"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/main_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+
+        <!--Navigation Drawer-->
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Header View...-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_gradient"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        tools:ignore="UnusedAttribute">
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/image_thumb_container"
+                            android:layout_height="@dimen/image_thumb_container">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/iv_drawer_profile"
+                                android:layout_width="@dimen/image_thumb"
+                                android:layout_height="@dimen/image_thumb"
+                                tools:src="@drawable/ic_profile_placeholder" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/iv_edit"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/bg_circle_white"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_edit_photo" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_drawer_greeting_msg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                tools:text="@string/good_morning" />
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_drawer_first_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                tools:ignore="HardcodedText"
+                                tools:text="Jonathan" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:orientation="vertical"
+                        tools:ignore="UnusedAttribute">
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_bank_card"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/banks_and_cards" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_payment_option"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/payement_option" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_invite_friends"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/invite_friends" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_login_security"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/login_and_security" />
+
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_notification"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/notifications" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_help"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/help" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_legal_agreements"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/legal_agreements" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_logout"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/log_out" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>

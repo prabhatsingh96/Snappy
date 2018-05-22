@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_splash"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="32dp">
+
+            <app.android.snappay.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:text="@string/snappay"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/app_label_text_size"
+                app:fontFamily="@font/patua_one" />
+
+            <app.android.snappay.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/enter_pin" />
+
+            <app.android.snappay.customview.CustomEditText
+                android:id="@+id/et_pin"
+                style="@style/Widget.App.EditText"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="center"
+                android:hint="@string/hint_pin"
+                android:inputType="numberPassword"
+                android:maxLength="@integer/default_pin_length"
+                tools:ignore="UnusedAttribute" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <app.android.snappay.customview.CustomButton
+                android:id="@+id/btn_submit"
+                style="@style/Widget.App.Button"
+                android:text="@string/submit" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+</layout>

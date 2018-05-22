@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.SendMoneyActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                app:navigationIcon="@drawable/ic_back_white"
+                app:title=" ">
+
+                <app.android.snappay.customview.CustomTextView
+                    style="@style/ToolbarTitleTextStyle"
+                    android:text="@string/summary" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <!-- Container -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <!--Top Container-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_gradient"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_send_s_s_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/send_s_s_to"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            tools:ignore="UnusedAttribute">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/iv_profile"
+                                android:layout_width="@dimen/image_thumb"
+                                android:layout_height="@dimen/image_thumb"
+                                android:src="@drawable/ic_profile_placeholder" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <app.android.snappay.customview.CustomTextView
+                                    android:id="@+id/tv_full_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:lines="1"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    tools:text="John Walker" />
+
+                                <app.android.snappay.customview.CustomTextView
+                                    android:id="@+id/tv_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:lines="1"
+                                    android:textColor="@android:color/white"
+                                    tools:text="john_walker@abc.comcom" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_add_note"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_note_"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <!--Bottom container-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_fund_sent_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/funds_sent_from"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            style="@style/DividerVerticalPrimary"
+                            android:layout_marginBottom="16dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/fund_send_from_card_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                tools:ignore="UnusedAttribute">
+
+                                <app.android.snappay.customview.CustomTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/debit_card"
+                                    android:textColor="@color/text_color_black" />
+
+
+                                <app.android.snappay.customview.CustomTextView
+                                    android:id="@+id/tv_amount_deducted_from_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/s_s"
+                                    android:textColor="@color/text_color_accent"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_card_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                tools:text="XXXX-XXXX-XXXX-2356" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/fund_send_from_wallet_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="32dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UnusedAttribute">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:text="@string/wallet"
+                                android:textColor="@color/text_color_black" />
+
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_amount_deducted_from_wallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/s_s"
+                                android:textColor="@color/text_color_accent"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/fees"
+                            android:textStyle="bold" />
+
+                        <View
+                            style="@style/DividerVerticalPrimary"
+                            android:layout_marginBottom="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UnusedAttribute">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:text="@string/service_charge"
+                                android:textColor="@color/text_color_black" />
+
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_service_tax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/s_s"
+                                android:textColor="@color/text_color_accent"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UnusedAttribute">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:text="@string/sgst"
+                                android:textColor="@color/text_color_black" />
+
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_sgst"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/s_s"
+                                android:textColor="@color/text_color_accent"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            style="@style/DividerVerticalPrimary"
+                            android:layout_marginBottom="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UnusedAttribute">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:text="@string/total_amount_to_be_send"
+                                android:textColor="@color/text_color_black"
+                                android:textStyle="bold" />
+
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:id="@+id/tv_total_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/s_s"
+                                android:textColor="@color/text_color_accent"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <app.android.snappay.customview.CustomButton
+                android:id="@+id/btn_proceed_to_send"
+                style="@style/Widget.App.Button"
+                android:layout_gravity="bottom"
+                android:text="@string/proceed_to_send" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+</layout>

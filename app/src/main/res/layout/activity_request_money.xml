@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.SendMoneyActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarStyle"
+            android:layout_marginBottom="32dp"
+            app:navigationIcon="@drawable/ic_back_white"
+            app:title=" ">
+
+            <app.android.snappay.customview.CustomTextView
+                style="@style/ToolbarTitleTextStyle"
+                android:text="@string/request_money" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <app.android.snappay.customview.CustomEditText
+            style="@style/Widget.App.EditText"
+            android:layout_marginBottom="32dp"
+            android:layout_marginHorizontal="16dp"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="@string/enter_name_email_mobile"
+            tools:ignore="UnusedAttribute" />
+
+        <app.android.snappay.customview.CustomTextView
+            android:id="@+id/tv_show_qr_code"
+            style="@style/ButtonTypeTextStyle"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/show_my_qr_code"
+            tools:ignore="UnusedAttribute" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <app.android.snappay.customview.CustomButton
+            style="@style/Widget.App.Button"
+            android:text="@string/proceed_to_send" />
+
+    </LinearLayout>
+
+
+</layout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_splash"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="80dp"
+            tools:ignore="UnusedAttribute">
+
+            <app.android.snappay.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:paddingHorizontal="16dp"
+                android:text="@string/snappay"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/app_label_text_size"
+                app:fontFamily="@font/patua_one" />
+
+            <app.android.snappay.customview.CustomEditText
+                android:id="@+id/et_email_mobile"
+                style="@style/Widget.App.EditText"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:hint="@string/email_mobile"
+                android:inputType="text"
+                tools:ignore="UnusedAttribute" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_round_corner_gray_border">
+
+                <app.android.snappay.customview.CustomEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLength="@integer/max_password_length"
+                    android:maxLines="1"
+                    android:paddingHorizontal="@dimen/input_box_padding_horizontal"
+                    android:paddingVertical="@dimen/input_box_padding_vertical"
+                    tools:ignore="UnusedAttribute" />
+
+                <ToggleButton
+                    android:id="@+id/btn_hide_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textOff="@string/show"
+                    android:textOn="@string/hide"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <app.android.snappay.customview.CustomTextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/forgot_password" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <app.android.snappay.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/dont_have_an_account" />
+
+                <app.android.snappay.customview.CustomTextView
+                    android:id="@+id/tv_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <app.android.snappay.customview.CustomButton
+                android:id="@+id/btn_login"
+                style="@style/Widget.App.Button"
+                android:layout_gravity="bottom"
+                android:text="@string/log_in" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+    </FrameLayout>
+</layout>

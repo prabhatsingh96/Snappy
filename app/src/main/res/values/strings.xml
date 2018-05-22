@@ -1,0 +1,181 @@
+<resources>
+    <!--Application Strings.-->
+    <string name="snappay">SnapPay</string>
+    <string name="app_name">SnapPay</string>
+    <string name="snap_pay">Snap Pay</string>
+
+    <!--Application default-->
+    <string name="default_currency_code">AED</string>
+    <!--ISO 3166 -->
+    <string name="default_country_code">AE</string>
+
+    <!--Error/Messages/Questions-->
+    <string name="message_double_tap_to_exit">Tap back button in order to exit</string>
+    <string name="message_password_changed">Password changed successfully</string>
+    <string name="message_same_security_ques">Please select different security questions</string>
+    <string name="message_otp_send_to_updated_mobile">Otp send to the updated mobile number</string>
+    <string name="message_card_added">Card added successfully</string>
+    <string name="message_note_added">Note added successfully</string>
+
+    <string name="ques_want_to_logout">Are you sure you want to logout?</string>
+
+    <string name="error_something_went_wrong_please_retry">Something went wrong please retry.</string>
+    <string name="error_connection_please_check_internet">Please check your internet connection and retry.</string>
+    <string name="error_socket_timeout">Server taking too much time to respond. Please retry.</string>
+
+    <!--validation error-->
+    <string name="error_empty_pin">Pin cannot be empty</string>
+    <string name="error_diff_confirm_pin">Confirm pin is different from pin</string>
+    <string name="error_invalid_pin_length">Pin cannot be less than %d</string>
+    <string name="error_empty_first_name">First name cannot be empty</string>
+    <string name="error_empty_last_name">Last name cannot be empty</string>
+    <string name="error_empty_email">Email cannot be empty</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_empty_mobile">Mobile cannot be empty</string>
+    <string name="error_invalid_mobile">Please enter a valid mobile number</string>
+    <string name="error_empty_password">Password cannot be empty</string>
+    <string name="error_empty_new_password">New password cannot be empty</string>
+    <string name="error_short_password">Password cannot be less than %d characters</string>
+    <string name="error_short_new_password">New password cannot be less than %d characters</string>
+    <string name="error_short_new_confirm_password">New confirm password cannot be less than %d characters</string>
+    <string name="error_empty_confirm_password">Confirm password cannot be empty</string>
+    <string name="error_empty_confirm_new_password">Confirm new password cannot be empty</string>
+    <string name="error_short_confirm_password">Confirm password cannot be less than %d characters</string>
+    <string name="error_password_not_matched">Passwords do not match</string>
+    <string name="error_empty_answer">Answer cannot be empty</string>
+    <string name="error_empty_bank_name">Bank name cannot be empty</string>
+    <string name="error_empty_account_name">Account name cannot be empty</string>
+    <string name="error_empty_iban">IBAN cannot be empty</string>
+    <string name="error_empty_swift_code">Swift code cannot be empty</string>
+    <string name="error_empty_routing_number">Routing number cannot be empty</string>
+    <string name="error_empty_otp">OTP cannot be empty</string>
+    <string name="error_empty_email_mobile">Email/Mobile cannot be empty</string>
+    <string name="error_empty_name_email_mobile">Name/ Email/ Mobile cannot be empty</string>
+    <string name="error_same_payee">Please enter a valid payee details</string>
+    <string name="error_invalid_option">Please select a valid option</string>
+    <string name="error_invalid_card_name">Please enter a valid card name</string>
+    <string name="error_invalid_card_number">Please enter a valid card number</string>
+    <string name="error_invalid_month">Please select a valid month</string>
+    <string name="error_invalid_cvv">Please enter a valid cvv number</string>
+    <string name="error_invalid_amount">Please enter a valid amount</string>
+    <string name="error_select_option_to_send_remaining_balance">Please select an option to send remaining balance</string>
+    <string name="error_select_payment_method_to_send_money">Please select payment method to send money</string>
+
+    <!--Permission error-->
+    <string name="error_perm_required_for_update_profile_pic">Permission is required to update profile picture.</string>
+
+    <!--Application String-->
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="confirm_pin">Confirm Pin</string>
+    <string name="hint_pin" translatable="false">* * * *</string>
+    <string name="hint_otp" translatable="false">* * * * * *</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="email_mobile">Email/ Mobile</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="location">Location</string>
+    <string name="ques_what_was_your_first_school">What was your first school?</string>
+    <string name="ques_what_s_your_mother_maiden_name">What\'s your mother maiden name?</string>
+    <string name="ques_favorite_color">What is your favorite color?</string>
+    <string name="ques_favorite_pet">Which is your favorite pet?</string>
+    <string name="answer">Answer</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_name">Account Name</string>
+    <string name="iban">IBAN</string>
+    <string name="swift_code">Swift Code</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="edit_number">Edit Number</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="send_money">Send Money</string>
+    <string name="send_s">Send %s</string>
+    <string name="request_money">Request Money</string>
+    <string name="wallet">Wallet</string>
+    <string name="activity">Activity</string>
+    <string name="snap_n_pay">Snap &amp; Pay</string>
+    <string name="utilities">Utilities</string>
+    <string name="loyalty_cards">Loyalty Cards</string>
+    <string name="offers">Offers</string>
+    <string name="good_morning">Good Morning !</string>
+    <string name="good_after_noon">Good Afternoon !</string>
+    <string name="good_evening">Good Evening !</string>
+    <string name="good_night">Good Night !</string>
+    <string name="action_notification">Notification</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="banks_and_cards">Banks and Cards</string>
+    <string name="payement_option">Payement Option</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="login_and_security">Login and Security</string>
+    <string name="notifications">Notifications</string>
+    <string name="help">Help</string>
+    <string name="legal_agreements">Legal Agreements</string>
+    <string name="log_out">Log Out</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer closed</string>
+    <string name="proceed_to_send">Proceed To Send</string>
+    <string name="enter_name_email_mobile">Enter Name/ Email/ Mobile</string>
+    <string name="show_my_qr_code">Show my QR Code</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="snap_pay_work_with_or_without_balance">Snap pay work with or without balance</string>
+    <string name="when_you_have_a_balance_choose_to_use_it_or_not_when_you_pay_or_send_money_when_you_don_t_just_pay_securely_using_your_card_or_bank">When you have a balance. Choose to use it or not when you pay or send money. When you don\'t just pay securely using your card or bank</string>
+    <string name="add_money">Add Money</string>
+    <string name="scan_qr_code_to_pay">Scan QR Code to Pay</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="aed">AED &gt;</string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="total_amount_to_be_sent">Total amount to be sent</string>
+    <string name="send_with_wallet">Send with Wallet</string>
+    <string name="available_balance_s_s">( Available balance %s %s)</string>
+    <string name="s_s">%s %s</string>
+    <string name="saved_card_amp_banks">Saved Card &amp; Banks</string>
+    <string name="cards">Cards</string>
+    <string name="banks">Banks</string>
+    <string name="select_an_option_to_send_balance">Select an option to send balance</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="add_card">Add Card</string>
+    <string name="debit_credit_card">Debit/ Credit Card</string>
+    <string name="card_name">Card Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="save_this_card_for_faster_checkout">Save this card for faster checkout</string>
+    <string name="summary">Summary</string>
+    <string name="send_s_s_to">Send %s %s to</string>
+    <string name="add_note">Add Note</string>
+    <string name="add_note_">Add Note &gt;</string>
+    <string name="funds_sent_from">Funds sent from</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="total_amount_to_be_send">Total amount to be send</string>
+    <string name="service_charge">Service Charge</string>
+    <string name="sgst">SGST</string>
+    <string name="fees">Fees</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="you_have_successfully_send_s_s_to_s">You have successfully send %s %s to %s</string>
+    <string name="you_are_sharing_your_name_and_photo_using_this_qr_code">You are sharing your name and photo using this QR Code</string>
+    <string name="search">Search</string>
+    <string name="s_next">%s ></string>
+
+
+</resources>

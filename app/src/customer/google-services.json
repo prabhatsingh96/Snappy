@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "114926731932",
+    "firebase_url": "https://snappay-customer.firebaseio.com",
+    "project_id": "snappay-customer",
+    "storage_bucket": "snappay-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114926731932:android:f40f6bdee4486575",
+        "android_client_info": {
+          "package_name": "app.android.snappay.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114926731932-gn87l5stqjljahbger6f55d6sh34upoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI3IYsvZtZjZOmP0aT6nc1TCEeaOIhzsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

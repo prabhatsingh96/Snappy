@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Merchant</string>
+
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="generate_bill">Generate Bill</string>
+    <string name="invoices">Invoices</string>
+    <string name="sales">Sales</string>
+</resources>

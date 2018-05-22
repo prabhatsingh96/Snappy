@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.SendMoneyActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarStyle"
+            app:navigationIcon="@drawable/ic_back_white"
+            app:title=" ">
+
+            <app.android.snappay.customview.CustomTextView
+                style="@style/ToolbarTitleTextStyle"
+                android:text="@string/snap_n_pay" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <app.android.snappay.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:text="@string/scan_qr_code_to_pay"
+                android:textColor="@color/colorAccent" />
+
+            <com.journeyapps.barcodescanner.CompoundBarcodeView
+                android:id="@+id/barcode_scanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qr_code_scanner_dimens"
+                android:layout_marginBottom="32dp"
+                app:zxing_scanner_layout="@layout/custom_scanner_layout" />
+
+            <app.android.snappay.customview.CustomTextView
+                android:id="@+id/tv_show_qr_code"
+                style="@style/ButtonTypeTextStyle"
+                android:text="@string/show_my_qr_code"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</layout>

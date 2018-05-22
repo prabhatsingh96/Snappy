@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <app.android.snappay.customview.CustomTextView
+            android:id="@+id/tv_success_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="32dp"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:text="@string/you_have_successfully_send_s_s_to_s" />
+
+        <app.android.snappay.customview.CustomButton
+            android:id="@+id/btn_done"
+            style="@style/Widget.App.Button"
+            android:layout_gravity="bottom"
+            android:text="@string/done" />
+
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+</layout>

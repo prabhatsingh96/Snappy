@@ -1,0 +1,20 @@
+{
+  "message": "Transection successful",
+  "response": [
+    {
+      "transection_id": "7e8bc007a33414fc7b71e4073fb596af",
+      "sender_id": "234833147b97bb6aed53a8f4f1c7a7d8",
+      "receiver_id": "f3d9de86462c28781cbe5c47ef22c3e5",
+      "amount": "57.5",
+      "card_received_amount": 0,
+      "time": "2018-05-03 09:44:59.520",
+      "currency_type": "AED",
+      "service_charge": 10,
+      "sgst": 5,
+      "wallet_id": 3,
+      "card_id": "",
+      "status": 1,
+      "note": ""
+    }
+  ]
+}

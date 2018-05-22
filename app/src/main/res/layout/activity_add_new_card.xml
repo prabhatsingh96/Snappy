@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.SendMoneyActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                app:navigationIcon="@drawable/ic_back_white"
+                app:title=" ">
+
+                <app.android.snappay.customview.CustomTextView
+                    style="@style/ToolbarTitleTextStyle"
+                    android:text="@string/add_new_card" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <!-- Container -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <app.android.snappay.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/add_card"
+                        android:textColor="@color/text_color_accent"
+                        android:textStyle="bold" />
+
+                    <app.android.snappay.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/debit_credit_card"
+                        android:textColor="@color/text_color_black"
+                        android:textStyle="bold" />
+
+                    <app.android.snappay.customview.CustomEditText
+                        android:id="@+id/et_card_name"
+                        style="@style/Widget.App.EditText"
+                        android:layout_marginBottom="16dp"
+                        android:hint="@string/card_name"
+                        android:inputType="textPersonName" />
+
+                    <app.android.snappay.customview.CustomEditText
+                        android:id="@+id/et_card_number"
+                        style="@style/Widget.App.EditText"
+                        android:layout_marginBottom="32dp"
+                        android:hint="@string/card_number"
+                        android:inputType="number" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:text="@string/expiry_date"
+                                android:textColor="@color/text_color_black"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatSpinner
+                                    android:id="@+id/spinner_month"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_weight="1"
+                                    android:entries="@array/months"
+                                    tools:ignore="UnusedAttribute" />
+
+                                <android.support.v7.widget.AppCompatSpinner
+                                    android:id="@+id/spinner_year"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:entries="@array/years" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <app.android.snappay.customview.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:text="@string/cvv"
+                                android:textColor="@color/text_color_black"
+                                android:textStyle="bold" />
+
+                            <app.android.snappay.customview.CustomEditText
+                                android:id="@+id/et_cvv"
+                                style="@style/Widget.App.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/cvv"
+                                android:inputType="number"
+                                android:maxLength="3" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/check_save_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="8dp"
+                        android:text="@string/save_this_card_for_faster_checkout"
+                        tools:targetApi="o" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <app.android.snappay.customview.CustomButton
+                android:id="@+id/btn_add_card"
+                style="@style/Widget.App.Button"
+                android:layout_gravity="bottom"
+                android:text="@string/add_card" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+</layout>

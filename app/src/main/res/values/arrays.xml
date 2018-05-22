@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="forgot_password_options">
+        <item>Select Reset Option</item>
+        <item>Answer the security questions</item>
+        <item>Otp Verification</item>
+    </string-array>
+
+    <string-array name="location_options">
+        <item>India</item>
+        <item>Russia</item>
+        <item>Canada</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>UAE</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>France</item>
+    </string-array>
+
+    <string-array name="security_question">
+        <item>@string/ques_what_was_your_first_school</item>
+        <item>@string/ques_what_s_your_mother_maiden_name</item>
+        <item>@string/ques_favorite_color</item>
+        <item>@string/ques_favorite_pet</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>MM</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+
+    <!--<string-array name="countries_name">-->
+    <!--<item>Andorra</item>-->
+    <!--<item>United Arab Emirates (UAE)</item>-->
+    <!--<item>Afghanistan</item>-->
+    <!--<item>Antigua and Barbuda</item>-->
+    <!--<item>Anguilla</item>-->
+    <!--<item>Albania</item>-->
+    <!--<item>Armenia</item>-->
+    <!--<item>Angola</item>-->
+    <!--<item>Antarctica</item>-->
+    <!--<item>Argentina</item>-->
+    <!--<item>Austria</item>-->
+    <!--<item>Australia</item>-->
+    <!--<item>Aruba</item>-->
+    <!--<item>Azerbaijan</item>-->
+    <!--<item>Bosnia And Herzegovina</item>-->
+    <!--<item>Barbados</item>-->
+    <!--<item>Bangladesh</item>-->
+    <!--<item>Belgium</item>-->
+    <!--<item>Burkina Faso</item>-->
+    <!--<item>Bulgaria</item>-->
+    <!--<item>Bahrain</item>-->
+    <!--<item>Burundi</item>-->
+    <!--<item>Benin</item>-->
+    <!--<item>Saint Barthélemy</item>-->
+    <!--<item>Bermuda</item>-->
+    <!--<item>Brunei Darussalam</item>-->
+    <!--<item>Bolivia, Plurinational State Of</item>-->
+    <!--<item>Brazil</item>-->
+    <!--<item>Bahamas</item>-->
+    <!--<item>Bhutan</item>-->
+    <!--<item>Botswana</item>-->
+    <!--<item>Belarus</item>-->
+    <!--<item>Belize</item>-->
+    <!--<item>Canada</item>-->
+    <!--<item>Cocos (keeling) Islands</item>-->
+    <!--<item>Congo, The Democratic Republic Of The</item>-->
+    <!--<item>Central African Republic</item>-->
+    <!--<item>Congo</item>-->
+    <!--<item>Switzerland</item>-->
+    <!--<item>Côte D'ivoire</item>-->
+    <!--<item>Cook Islands</item>-->
+    <!--<item>Chile</item>-->
+    <!--<item>Cameroon</item>-->
+    <!--<item>China</item>-->
+    <!--<item>Colombia</item>-->
+    <!--<item>Costa Rica</item>-->
+    <!--<item>Cuba</item>-->
+    <!--<item>Cape Verde</item>-->
+    <!--<item>Christmas Island</item>-->
+    <!--<item>Cyprus</item>-->
+    <!--<item>Czech Republic</item>-->
+    <!--<item>Germany</item>-->
+    <!--<item>Djibouti</item>-->
+    <!--<item>Denmark</item>-->
+    <!--<item>Dominica</item>-->
+    <!--<item>Dominican Republic</item>-->
+    <!--<item>Algeria</item>-->
+    <!--<item>Ecuador</item>-->
+    <!--<item>Estonia</item>-->
+    <!--<item>Egypt</item>-->
+    <!--<item>Eritrea</item>-->
+    <!--<item>Spain</item>-->
+    <!--<item>Ethiopia</item>-->
+    <!--<item>Finland</item>-->
+    <!--<item>Fiji</item>-->
+    <!--<item>Falkland Islands (malvinas)</item>-->
+    <!--<item>Micronesia, Federated States Of</item>-->
+    <!--<item>Faroe Islands</item>-->
+    <!--<item>France</item>-->
+    <!--<item>Gabon</item>-->
+    <!--<item>United Kingdom</item>-->
+    <!--<item>Grenada</item>-->
+    <!--<item>Georgia</item>-->
+    <!--<item>French Guyana</item>-->
+    <!--<item>Ghana</item>-->
+    <!--<item>Gibraltar</item>-->
+    <!--<item>Greenland</item>-->
+    <!--<item>Gambia</item>-->
+    <!--<item>Guinea</item>-->
+    <!--<item>Guadeloupe</item>-->
+    <!--<item>Equatorial Guinea</item>-->
+    <!--<item>Greece</item>-->
+    <!--<item>Guatemala</item>-->
+    <!--<item>Guinea-bissau</item>-->
+    <!--<item>Guyana</item>-->
+    <!--<item>Hong Kong</item>-->
+    <!--<item>Honduras</item>-->
+    <!--<item>Croatia</item>-->
+    <!--<item>Haiti</item>-->
+    <!--<item>Hungary</item>-->
+    <!--<item>Indonesia</item>-->
+    <!--<item>Ireland</item>-->
+    <!--<item>Israel</item>-->
+    <!--<item>Isle Of Man</item>-->
+    <!--<item>Iceland</item>-->
+    <!--<item>India</item>-->
+    <!--<item>Iraq</item>-->
+    <!--<item>Iran, Islamic Republic Of</item>-->
+    <!--<item>Italy</item>-->
+    <!--<item>Jamaica</item>-->
+    <!--<item>Jordan</item>-->
+    <!--<item>Japan</item>-->
+    <!--<item>Kenya</item>-->
+    <!--<item>Kyrgyzstan</item>-->
+    <!--<item>Cambodia</item>-->
+    <!--<item>Kiribati</item>-->
+    <!--<item>Comoros</item>-->
+    <!--<item>Saint Kitts and Nevis</item>-->
+    <!--<item>North Korea</item>-->
+    <!--<item>South Korea</item>-->
+    <!--<item>Kuwait</item>-->
+    <!--<item>Cayman Islands</item>-->
+    <!--<item>Kazakhstan</item>-->
+    <!--<item>Lao People's Democratic Republic</item>-->
+    <!--<item>Lebanon</item>-->
+    <!--<item>Saint Lucia</item>-->
+    <!--<item>Liechtenstein</item>-->
+    <!--<item>Sri Lanka</item>-->
+    <!--<item>Liberia</item>-->
+    <!--<item>Lesotho</item>-->
+    <!--<item>Lithuania</item>-->
+    <!--<item>Luxembourg</item>-->
+    <!--<item>Latvia</item>-->
+    <!--<item>Libya</item>-->
+    <!--<item>Morocco</item>-->
+    <!--<item>Monaco</item>-->
+    <!--<item>Moldova, Republic Of</item>-->
+    <!--<item>Montenegro</item>-->
+    <!--<item>Madagascar</item>-->
+    <!--<item>Marshall Islands</item>-->
+    <!--<item>Macedonia, The Former Yugoslav Republic Of</item>-->
+    <!--<item>Mali</item>-->
+    <!--<item>Myanmar</item>-->
+    <!--<item>Mongolia</item>-->
+    <!--<item>Macao</item>-->
+    <!--<item>Martinique</item>-->
+    <!--<item>Mauritania</item>-->
+    <!--<item>Montserrat</item>-->
+    <!--<item>Malta</item>-->
+    <!--<item>Mauritius</item>-->
+    <!--<item>Maldives</item>-->
+    <!--<item>Malawi</item>-->
+    <!--<item>Mexico</item>-->
+    <!--<item>Malaysia</item>-->
+    <!--<item>Mozambique</item>-->
+    <!--<item>Namibia</item>-->
+    <!--<item>New Caledonia</item>-->
+    <!--<item>Niger</item>-->
+    <!--<item>Nigeria</item>-->
+    <!--<item>Nicaragua</item>-->
+    <!--<item>Netherlands</item>-->
+    <!--<item>Norway</item>-->
+    <!--<item>Nepal</item>-->
+    <!--<item>Nauru</item>-->
+    <!--<item>Niue</item>-->
+    <!--<item>New Zealand</item>-->
+    <!--<item>Oman</item>-->
+    <!--<item>Panama</item>-->
+    <!--<item>Peru</item>-->
+    <!--<item>French Polynesia</item>-->
+    <!--<item>Papua New Guinea</item>-->
+    <!--<item>Philippines</item>-->
+    <!--<item>Pakistan</item>-->
+    <!--<item>Poland</item>-->
+    <!--<item>Saint Pierre And Miquelon</item>-->
+    <!--<item>Pitcairn</item>-->
+    <!--<item>Puerto Rico</item>-->
+    <!--<item>Palestine</item>-->
+    <!--<item>Portugal</item>-->
+    <!--<item>Palau</item>-->
+    <!--<item>Paraguay</item>-->
+    <!--<item>Qatar</item>-->
+    <!--<item>Réunion</item>-->
+    <!--<item>Romania</item>-->
+    <!--<item>Serbia</item>-->
+    <!--<item>Russian Federation</item>-->
+    <!--<item>Rwanda</item>-->
+    <!--<item>Saudi Arabia</item>-->
+    <!--<item>Solomon Islands</item>-->
+    <!--<item>Seychelles</item>-->
+    <!--<item>Sudan</item>-->
+    <!--<item>Sweden</item>-->
+    <!--<item>Singapore</item>-->
+    <!--<item>Saint Helena, Ascension And Tristan Da Cunha</item>-->
+    <!--<item>Slovenia</item>-->
+    <!--<item>Slovakia</item>-->
+    <!--<item>Sierra Leone</item>-->
+    <!--<item>San Marino</item>-->
+    <!--<item>Senegal</item>-->
+    <!--<item>Somalia</item>-->
+    <!--<item>Suriname</item>-->
+    <!--<item>Sao Tome And Principe</item>-->
+    <!--<item>El Salvador</item>-->
+    <!--<item>Sint Maarten</item>-->
+    <!--<item>Syrian Arab Republic</item>-->
+    <!--<item>Swaziland</item>-->
+    <!--<item>Turks and Caicos Islands</item>-->
+    <!--<item>Chad</item>-->
+    <!--<item>Togo</item>-->
+    <!--<item>Thailand</item>-->
+    <!--<item>Tajikistan</item>-->
+    <!--<item>Tokelau</item>-->
+    <!--<item>Timor-leste</item>-->
+    <!--<item>Turkmenistan</item>-->
+    <!--<item>Tunisia</item>-->
+    <!--<item>Tonga</item>-->
+    <!--<item>Turkey</item>-->
+    <!--<item>Trinidad &amp; Tobago</item>-->
+    <!--<item>Tuvalu</item>-->
+    <!--<item>Taiwan</item>-->
+    <!--<item>Tanzania, United Republic Of</item>-->
+    <!--<item>Ukraine</item>-->
+    <!--<item>Uganda</item>-->
+    <!--<item>United States</item>-->
+    <!--<item>Uruguay</item>-->
+    <!--<item>Uzbekistan</item>-->
+    <!--<item>Holy See (vatican City State)</item>-->
+    <!--<item>Saint Vincent &amp; The Grenadines</item>-->
+    <!--<item>Venezuela, Bolivarian Republic Of</item>-->
+    <!--<item>British Virgin Islands</item>-->
+    <!--<item>US Virgin Islands</item>-->
+    <!--<item>Viet Nam</item>-->
+    <!--<item>Vanuatu</item>-->
+    <!--<item>Wallis And Futuna</item>-->
+    <!--<item>Samoa</item>-->
+    <!--<item>Kosovo</item>-->
+    <!--<item>Yemen</item>-->
+    <!--<item>Mayotte</item>-->
+    <!--<item>South Africa</item>-->
+    <!--<item>Zambia</item>-->
+    <!--<item>Zimbabwe</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="countries_code">-->
+    <!--<item>ad</item>-->
+    <!--<item>ae</item>-->
+    <!--<item>af</item>-->
+    <!--<item>ag</item>-->
+    <!--<item>ai</item>-->
+    <!--<item>al</item>-->
+    <!--<item>am</item>-->
+    <!--<item>ao</item>-->
+    <!--<item>aq</item>-->
+    <!--<item>ar</item>-->
+    <!--<item>at</item>-->
+    <!--<item>au</item>-->
+    <!--<item>aw</item>-->
+    <!--<item>az</item>-->
+    <!--<item>ba</item>-->
+    <!--<item>bb</item>-->
+    <!--<item>bd</item>-->
+    <!--<item>be</item>-->
+    <!--<item>bf</item>-->
+    <!--<item>bg</item>-->
+    <!--<item>bh</item>-->
+    <!--<item>bi</item>-->
+    <!--<item>bj</item>-->
+    <!--<item>bl</item>-->
+    <!--<item>bm</item>-->
+    <!--<item>bn</item>-->
+    <!--<item>bo</item>-->
+    <!--<item>br</item>-->
+    <!--<item>bs</item>-->
+    <!--<item>bt</item>-->
+    <!--<item>bw</item>-->
+    <!--<item>by</item>-->
+    <!--<item>bz</item>-->
+    <!--<item>ca</item>-->
+    <!--<item>cc</item>-->
+    <!--<item>cd</item>-->
+    <!--<item>cf</item>-->
+    <!--<item>cg</item>-->
+    <!--<item>ch</item>-->
+    <!--<item>ci</item>-->
+    <!--<item>ck</item>-->
+    <!--<item>cl</item>-->
+    <!--<item>cm</item>-->
+    <!--<item>cn</item>-->
+    <!--<item>co</item>-->
+    <!--<item>cr</item>-->
+    <!--<item>cu</item>-->
+    <!--<item>cv</item>-->
+    <!--<item>cx</item>-->
+    <!--<item>cy</item>-->
+    <!--<item>cz</item>-->
+    <!--<item>de</item>-->
+    <!--<item>dj</item>-->
+    <!--<item>dk</item>-->
+    <!--<item>dm</item>-->
+    <!--<item>do</item>-->
+    <!--<item>dz</item>-->
+    <!--<item>ec</item>-->
+    <!--<item>ee</item>-->
+    <!--<item>eg</item>-->
+    <!--<item>er</item>-->
+    <!--<item>es</item>-->
+    <!--<item>et</item>-->
+    <!--<item>fi</item>-->
+    <!--<item>fj</item>-->
+    <!--<item>fk</item>-->
+    <!--<item>fm</item>-->
+    <!--<item>fo</item>-->
+    <!--<item>fr</item>-->
+    <!--<item>ga</item>-->
+    <!--<item>gb</item>-->
+    <!--<item>gd</item>-->
+    <!--<item>ge</item>-->
+    <!--<item>gf</item>-->
+    <!--<item>gh</item>-->
+    <!--<item>gi</item>-->
+    <!--<item>gl</item>-->
+    <!--<item>gm</item>-->
+    <!--<item>gn</item>-->
+    <!--<item>gp</item>-->
+    <!--<item>gq</item>-->
+    <!--<item>gr</item>-->
+    <!--<item>gt</item>-->
+    <!--<item>gw</item>-->
+    <!--<item>gy</item>-->
+    <!--<item>hk</item>-->
+    <!--<item>hn</item>-->
+    <!--<item>hr</item>-->
+    <!--<item>ht</item>-->
+    <!--<item>hu</item>-->
+    <!--<item>id</item>-->
+    <!--<item>ie</item>-->
+    <!--<item>il</item>-->
+    <!--<item>im</item>-->
+    <!--<item>is</item>-->
+    <!--<item>in</item>-->
+    <!--<item>iq</item>-->
+    <!--<item>ir</item>-->
+    <!--<item>it</item>-->
+    <!--<item>jm</item>-->
+    <!--<item>jo</item>-->
+    <!--<item>jp</item>-->
+    <!--<item>ke</item>-->
+    <!--<item>kg</item>-->
+    <!--<item>kh</item>-->
+    <!--<item>ki</item>-->
+    <!--<item>km</item>-->
+    <!--<item>kn</item>-->
+    <!--<item>kp</item>-->
+    <!--<item>kr</item>-->
+    <!--<item>kw</item>-->
+    <!--<item>ky</item>-->
+    <!--<item>kz</item>-->
+    <!--<item>la</item>-->
+    <!--<item>lb</item>-->
+    <!--<item>lc</item>-->
+    <!--<item>li</item>-->
+    <!--<item>lk</item>-->
+    <!--<item>lr</item>-->
+    <!--<item>ls</item>-->
+    <!--<item>lt</item>-->
+    <!--<item>lu</item>-->
+    <!--<item>lv</item>-->
+    <!--<item>ly</item>-->
+    <!--<item>ma</item>-->
+    <!--<item>mc</item>-->
+    <!--<item>md</item>-->
+    <!--<item>me</item>-->
+    <!--<item>mg</item>-->
+    <!--<item>mh</item>-->
+    <!--<item>mk</item>-->
+    <!--<item>ml</item>-->
+    <!--<item>mm</item>-->
+    <!--<item>mn</item>-->
+    <!--<item>mo</item>-->
+    <!--<item>mq</item>-->
+    <!--<item>mr</item>-->
+    <!--<item>ms</item>-->
+    <!--<item>mt</item>-->
+    <!--<item>mu</item>-->
+    <!--<item>mv</item>-->
+    <!--<item>mw</item>-->
+    <!--<item>mx</item>-->
+    <!--<item>my</item>-->
+    <!--<item>mz</item>-->
+    <!--<item>na</item>-->
+    <!--<item>nc</item>-->
+    <!--<item>ne</item>-->
+    <!--<item>ng</item>-->
+    <!--<item>ni</item>-->
+    <!--<item>nl</item>-->
+    <!--<item>no</item>-->
+    <!--<item>np</item>-->
+    <!--<item>nr</item>-->
+    <!--<item>nu</item>-->
+    <!--<item>nz</item>-->
+    <!--<item>om</item>-->
+    <!--<item>pa</item>-->
+    <!--<item>pe</item>-->
+    <!--<item>pf</item>-->
+    <!--<item>pg</item>-->
+    <!--<item>ph</item>-->
+    <!--<item>pk</item>-->
+    <!--<item>pl</item>-->
+    <!--<item>pm</item>-->
+    <!--<item>pn</item>-->
+    <!--<item>pr</item>-->
+    <!--<item>ps</item>-->
+    <!--<item>pt</item>-->
+    <!--<item>pw</item>-->
+    <!--<item>py</item>-->
+    <!--<item>qa</item>-->
+    <!--<item>re</item>-->
+    <!--<item>ro</item>-->
+    <!--<item>rs</item>-->
+    <!--<item>ru</item>-->
+    <!--<item>rw</item>-->
+    <!--<item>sa</item>-->
+    <!--<item>sb</item>-->
+    <!--<item>sc</item>-->
+    <!--<item>sd</item>-->
+    <!--<item>se</item>-->
+    <!--<item>sg</item>-->
+    <!--<item>sh</item>-->
+    <!--<item>si</item>-->
+    <!--<item>sk</item>-->
+    <!--<item>sl</item>-->
+    <!--<item>sm</item>-->
+    <!--<item>sn</item>-->
+    <!--<item>so</item>-->
+    <!--<item>sr</item>-->
+    <!--<item>st</item>-->
+    <!--<item>sv</item>-->
+    <!--<item>sx</item>-->
+    <!--<item>sy</item>-->
+    <!--<item>sz</item>-->
+    <!--<item>tc</item>-->
+    <!--<item>td</item>-->
+    <!--<item>tg</item>-->
+    <!--<item>th</item>-->
+    <!--<item>tj</item>-->
+    <!--<item>tk</item>-->
+    <!--<item>tl</item>-->
+    <!--<item>tm</item>-->
+    <!--<item>tn</item>-->
+    <!--<item>to</item>-->
+    <!--<item>tr</item>-->
+    <!--<item>tt</item>-->
+    <!--<item>tv</item>-->
+    <!--<item>tw</item>-->
+    <!--<item>tz</item>-->
+    <!--<item>ua</item>-->
+    <!--<item>ug</item>-->
+    <!--<item>us</item>-->
+    <!--<item>uy</item>-->
+    <!--<item>uz</item>-->
+    <!--<item>va</item>-->
+    <!--<item>vc</item>-->
+    <!--<item>ve</item>-->
+    <!--<item>vg</item>-->
+    <!--<item>vi</item>-->
+    <!--<item>vn</item>-->
+    <!--<item>vu</item>-->
+    <!--<item>wf</item>-->
+    <!--<item>ws</item>-->
+    <!--<item>xk</item>-->
+    <!--<item>ye</item>-->
+    <!--<item>yt</item>-->
+    <!--<item>za</item>-->
+    <!--<item>zm</item>-->
+    <!--<item>zw</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="countries_currencies">-->
+    <!--<item>ADP</item>-->
+    <!--<item>AED</item>-->
+    <!--<item>AFN</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>ALL</item>-->
+    <!--<item>AMD</item>-->
+    <!--<item>AOA</item>-->
+    <!--<item>Antarctica</item>-->
+    <!--<item>ARS</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>AUD</item>-->
+    <!--<item>AWG</item>-->
+    <!--<item>AZN</item>-->
+    <!--<item>BAM</item>-->
+    <!--<item>BBD</item>-->
+    <!--<item>BDT</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>BGN</item>-->
+    <!--<item>BHD</item>-->
+    <!--<item>BIF</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>BMD</item>-->
+    <!--<item>BND</item>-->
+    <!--<item>BOB</item>-->
+    <!--<item>BRL</item>-->
+    <!--<item>BSD</item>-->
+    <!--<item>BTN</item>-->
+    <!--<item>BWP</item>-->
+    <!--<item>BYN</item>-->
+    <!--<item>BZD</item>-->
+    <!--<item>CAD</item>-->
+    <!--<item>AUD</item>-->
+    <!--<item>CDF</item>-->
+    <!--<item>XAF</item>-->
+    <!--<item>CDF</item>-->
+    <!--<item>CHF</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>none</item>-->
+    <!--<item>CLP</item>-->
+    <!--<item>XAF</item>-->
+    <!--<item>CNY</item>-->
+    <!--<item>COP</item>-->
+    <!--<item>CRC</item>-->
+    <!--<item>CUP</item>-->
+    <!--<item>CVE</item>-->
+    <!--<item>AUD</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>CZK</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>DJF</item>-->
+    <!--<item>none</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>DOP</item>-->
+    <!--<item>DZD</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>EGP</item>-->
+    <!--<item>ERN</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>ETB</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>FJD</item>-->
+    <!--<item>FKP</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>none</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>XAF</item>-->
+    <!--<item>GBP</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>GEL</item>-->
+    <!--<item>GYD</item>-->
+    <!--<item>GHS</item>-->
+    <!--<item>GIP</item>-->
+    <!--<item>DKK</item>-->
+    <!--<item>GMD</item>-->
+    <!--<item>GNF</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>XAF</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>GTQ</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>GYD</item>-->
+    <!--<item>HKD</item>-->
+    <!--<item>HNL</item>-->
+    <!--<item>HRK</item>-->
+    <!--<item>HTG</item>-->
+    <!--<item>HUF</item>-->
+    <!--<item>IDR</item>-->
+    <!--<item>ISK</item>-->
+    <!--<item>ILS</item>-->
+    <!--<item>IMP</item>-->
+    <!--<item>ISK</item>-->
+    <!--<item>INR</item>-->
+    <!--<item>IQD</item>-->
+    <!--<item>IRR</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>JMD</item>-->
+    <!--<item>JOD</item>-->
+    <!--<item>JPY</item>-->
+    <!--<item>KES</item>-->
+    <!--<item>KGS</item>-->
+    <!--<item>KHR</item>-->
+    <!--<item>AUD</item>-->
+    <!--<item>KMF</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>KPW</item>-->
+    <!--<item>KRW</item>-->
+    <!--<item>KWD</item>-->
+    <!--<item>KYD</item>-->
+    <!--<item>KZT</item>-->
+    <!--<item>LaoPeople'sDemocraticRepublic</item>-->
+    <!--<item>LBP</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>CHF</item>-->
+    <!--<item>LKR</item>-->
+    <!--<item>LRD</item>-->
+    <!--<item>LSL</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>LYD</item>-->
+    <!--<item>MAD</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>MDL</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>MGA</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>MKD</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>MMK</item>-->
+    <!--<item>MNT</item>-->
+    <!--<item>MOP</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>MRU</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>MUR</item>-->
+    <!--<item>MVR</item>-->
+    <!--<item>MWK</item>-->
+    <!--<item>MXN</item>-->
+    <!--<item>MYR</item>-->
+    <!--<item>MZN</item>-->
+    <!--<item>NAD</item>-->
+    <!--<item>XPF</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>NGN</item>-->
+    <!--<item>NIO</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>NOK</item>-->
+    <!--<item>NPR</item>-->
+    <!--<item>AUD</item>-->
+    <!--<item>NZD</item>-->
+    <!--<item>NZD</item>-->
+    <!--<item>OMR</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>PEN</item>-->
+    <!--<item>XPF</item>-->
+    <!--<item>PGK</item>-->
+    <!--<item>PHP</item>-->
+    <!--<item>PKR</item>-->
+    <!--<item>PLN</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>NZD</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>ILS</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>PYG</item>-->
+    <!--<item>QAR</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>RON</item>-->
+    <!--<item>RSD</item>-->
+    <!--<item>RUB</item>-->
+    <!--<item>RWF</item>-->
+    <!--<item>SAR</item>-->
+    <!--<item>SBD</item>-->
+    <!--<item>SCR</item>-->
+    <!--<item>SDG</item>-->
+    <!--<item>SEK</item>-->
+    <!--<item>SGD</item>-->
+    <!--<item>SHP</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>SLL</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>SOS</item>-->
+    <!--<item>SRD</item>-->
+    <!--<item>STN</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>ANG</item>-->
+    <!--<item>SYP</item>-->
+    <!--<item>SZL</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>XAF</item>-->
+    <!--<item>XOF</item>-->
+    <!--<item>THB</item>-->
+    <!--<item>TJS</item>-->
+    <!--<item>NZD</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>TMT</item>-->
+    <!--<item>TND</item>-->
+    <!--<item>TOP</item>-->
+    <!--<item>TRY</item>-->
+    <!--<item>TTD</item>-->
+    <!--<item>AUD</item>-->
+    <!--<item>TWD</item>-->
+    <!--<item>TZS</item>-->
+    <!--<item>UAH</item>-->
+    <!--<item>UGX</item>-->
+    <!--<item>UYU</item>-->
+    <!--<item>UYU</item>-->
+    <!--<item>UZS</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>XCD</item>-->
+    <!--<item>VEF</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>USD</item>-->
+    <!--<item>VND</item>-->
+    <!--<item>VUV</item>-->
+    <!--<item>XPF</item>-->
+    <!--<item>WST</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>YER</item>-->
+    <!--<item>EUR</item>-->
+    <!--<item>ZAR</item>-->
+    <!--<item>ZMW</item>-->
+    <!--<item>USD</item>-->
+    <!--</string-array>-->
+
+
+</resources>

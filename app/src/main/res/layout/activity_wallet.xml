@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.WalletActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                app:navigationIcon="@drawable/ic_back_white"
+                app:title=" ">
+
+                <app.android.snappay.customview.CustomTextView
+                    style="@style/ToolbarTitleTextStyle"
+                    android:text="@string/wallet_balance" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_gradient"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <app.android.snappay.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available_balance"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <app.android.snappay.customview.CustomTextView
+                    android:id="@+id/tv_available_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    tools:ignore="HardcodedText"
+                    tools:text="@string/s_s" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_three"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <app.android.snappay.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="@string/snap_pay_work_with_or_without_balance"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <app.android.snappay.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/when_you_have_a_balance_choose_to_use_it_or_not_when_you_pay_or_send_money_when_you_don_t_just_pay_securely_using_your_card_or_bank"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <app.android.snappay.customview.CustomButton
+                android:id="@+id/btn_add_money"
+                style="@style/Widget.App.Button"
+                android:text="@string/add_money" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+    </FrameLayout>
+
+
+</layout>

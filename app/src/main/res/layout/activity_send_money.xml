@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.SendMoneyActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                android:layout_marginBottom="16dp"
+                app:title=" "
+                app:navigationIcon="@drawable/ic_back_white">
+
+                <app.android.snappay.customview.CustomTextView
+                    style="@style/ToolbarTitleTextStyle"
+                    android:text="@string/send_money" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <app.android.snappay.customview.CustomEditText
+                android:id="@+id/et_name_email_mobile"
+                style="@style/Widget.App.EditText"
+                android:layout_margin="16dp"
+                android:drawablePadding="14dp"
+                android:drawableStart="@drawable/ic_search"
+                android:hint="@string/enter_name_email_mobile"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <app.android.snappay.customview.CustomButton
+                android:id="@+id/tv_proceed_to_send"
+                style="@style/Widget.App.Button"
+                android:text="@string/proceed_to_send" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+</layout>

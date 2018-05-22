@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.HomeActivity"
+        tools:openDrawer="start">
+
+        <!--Main content...-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient"
+            android:orientation="vertical">
+
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                app:navigationIcon="@drawable/ic_menu"
+                app:title=" ">
+
+                <app.android.snappay.customview.CustomTextView
+                    android:id="@+id/tv_title"
+                    style="@style/ToolbarTitleTextStyle"
+                    android:text="@string/snap_pay" />
+            </android.support.v7.widget.Toolbar>
+
+            <!--merchant container-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="24dp"
+                    android:orientation="vertical"
+                    tools:ignore="UnusedAttribute">
+
+                    <!--generate qr-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_generate_qr"
+                        style="@style/HomeOptionCardStyle"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_snap_pay" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            style="@style/HomeOptionCardTextStyle"
+                            android:text="@string/generate_qr_code" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--generate bill-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_generate_bill"
+                        style="@style/HomeOptionCardStyle"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_generate_bill" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            style="@style/HomeOptionCardTextStyle"
+                            android:text="@string/generate_bill" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Card Invoice-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_invoice"
+                        style="@style/HomeOptionCardStyle"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_invoices" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            style="@style/HomeOptionCardTextStyle"
+                            android:text="@string/invoices" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Card Sales-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_sales"
+                        style="@style/HomeOptionCardStyle"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_sales" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            style="@style/HomeOptionCardTextStyle"
+                            android:text="@string/sales" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <!--Card Activity-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_activity"
+                        style="@style/HomeOptionCardStyle"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_merchant_activity" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            style="@style/HomeOptionCardTextStyle"
+                            android:text="@string/activity" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--Navigation Drawer-->
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Header View...-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_gradient"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        tools:ignore="UnusedAttribute">
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/image_thumb_container"
+                            android:layout_height="@dimen/image_thumb_container">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/iv_drawer_profile"
+                                android:layout_width="@dimen/image_thumb"
+                                android:layout_height="@dimen/image_thumb"
+                                tools:src="@drawable/ic_profile_placeholder" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/iv_edit"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/bg_circle_white"
+                                android:padding="8dp"
+                                tools:src="@drawable/ic_edit_photo" />
+
+                        </RelativeLayout>
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Coffee Merchant"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:orientation="vertical"
+                        tools:ignore="UnusedAttribute">
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_bank"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/banks" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_login_security"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/login_and_security" />
+
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_notification"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/notifications" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_help"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/help" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_legal_agreements"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/legal_agreements" />
+
+                        <include layout="@layout/item_divider_vertical_blue" />
+
+                        <app.android.snappay.customview.CustomTextView
+                            android:id="@+id/tv_logout"
+                            style="@style/NavItemTextStyle"
+                            android:text="@string/log_out" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>
